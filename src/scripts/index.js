@@ -3,6 +3,8 @@ import DataActions from 'flux/actions/DataActions.js';
 import Home from 'components/Home.js';
 import About from 'components/About.js';
 
+import Header from 'components/Header.js';
+
 import {
     BrowserRouter as Router,
     Route,
@@ -34,6 +36,7 @@ class AppInitializer {
             render(
                 <Router>
                     <div>
+                        <Header />
                         <Switch>
                             <Route path="/" component={Home} exact />
 
